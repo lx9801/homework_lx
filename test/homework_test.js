@@ -13,7 +13,7 @@ describe('#homework.js', () => {
     it('check i return [address.add1,address.add2]', () => {
         assert.equal(homework(f, "i"), ["address.add1", "address.add2"]);
     });
-    it('check i return [address.add1,address.add2]', () => {
+    it('check j return ["ages", "address.add1"]', () => {
         assert.equal(homework(f, "j"), ["ages", "address.add1"]);
     });
 
