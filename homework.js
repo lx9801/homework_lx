@@ -8,7 +8,7 @@
         return null;
     }
     /* 
-        参数解读：res是返回的结果，check是检查函数中返回的key值，childKey是如果有子对象的key
+        参数解读：res是记录符合条件的结果，check是检查函数中返回的key值，childKey是如果有子对象的依次记录子对象的key
     */
     var someFunction = function(obj, val) {
         var res = [];
@@ -26,7 +26,7 @@
             }
             for (let key in obj) {
                 if (typeof (obj[key]) == "object") {
-                    childKey = key + "." + childKey;
+                    childKey = childKey +  key+".";
                     forFun(obj[key], val);
 
                 }
